@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Pane from './Pane.svelte';
-	import { KIND_LABEL, type DiffView, type KindGroup, type LinkView } from '$lib/diff';
+	import { KIND_LABEL, type DiffView, type KindGroup, type LinkView } from '#lib/diff.js';
 
 	let { view }: { view: DiffView } = $props();
 

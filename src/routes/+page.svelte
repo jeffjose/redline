@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { app, editInputs, loadSample, restore } from '$lib/state.svelte';
-	import { buildView } from '$lib/diff';
-	import { SAMPLES } from '$lib/samples';
-	import { cn } from '$lib/utils';
-	import DiffViewer from '$lib/components/DiffViewer.svelte';
-	import InputPanel from '$lib/components/InputPanel.svelte';
-	import Button from '$lib/components/ui/Button.svelte';
+	import { app, editInputs, loadSample, restore } from '#lib/state.svelte.js';
+	import { buildView } from '#lib/diff.js';
+	import { SAMPLES } from '#lib/samples.js';
+	import { cn } from '#lib/utils.js';
+	import DiffViewer from '#lib/components/DiffViewer.svelte';
+	import InputPanel from '#lib/components/InputPanel.svelte';
+	import Button from '#lib/components/ui/Button.svelte';
 	import PenLine from '@lucide/svelte/icons/pen-line';
 
 	onMount(() => {

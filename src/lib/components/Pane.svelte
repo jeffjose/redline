@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { cn } from '$lib/utils';
-	import type { KindGroup, PaneView } from '$lib/diff';
+	import { cn } from '#lib/utils.js';
+	import type { KindGroup, PaneView } from '#lib/diff.js';
 
 	// Literal class names, not `seg-${group}` — Tailwind purges @layer classes
 	// whose full name never appears in the source text.

@@ -38,6 +38,11 @@ markdown fences and unclassified segments, strict about unknown/duplicate ids.
 ```sh
 pnpm install
 pnpm dev        # http://localhost:5190
-pnpm check      # svelte-check
+pnpm check      # fast type check: svelte-check-native + tsrs
+pnpm check:slow # official svelte-check; run before calling a change done
 pnpm build      # static build in build/
 ```
+
+SvelteKit 3 + Vite 8. Kit options live in `sveltekit({...})` in `vite.config.ts`
+(there is no `svelte.config.js`), and library code is imported via `#lib/...`
+with file extensions (`#lib/diff.js`, `#lib/components/Pane.svelte`).

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { app, loadSample, renderDiff, saveInputs } from '$lib/state.svelte';
-	import { SAMPLES } from '$lib/samples';
-	import { buildPrompt } from '$lib/prompt';
+	import { app, loadSample, renderDiff, saveInputs } from '#lib/state.svelte.js';
+	import { SAMPLES } from '#lib/samples.js';
+	import { buildPrompt } from '#lib/prompt.js';
 	import Button from './ui/Button.svelte';
 	import ArrowRight from '@lucide/svelte/icons/arrow-right';
 	import Check from '@lucide/svelte/icons/check';
